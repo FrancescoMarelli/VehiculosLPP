@@ -17,4 +17,8 @@ class TestVehiculo < Test::Unit::TestCase
     def test_disc
         assert_equal(100.0, discount_price(200.0,50.0))
     end
+
+    def tot_km
+        assert_equal(1000, done_km(150000, 151000))
+    end
 end
