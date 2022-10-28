@@ -6,3 +6,5 @@ Se ha realizado la primera función que retorna el tipo de vehiculo según el pa
 Se han realizado las pruebas unitarias sobra la función de tipo con el resultado esperado.
 
 Realización de la función que calcula el coste total de alquiler segun un precio fijo de vehiculo y el numero de dias de alquiler
+
+Prueba funcional de la función de coste total, resultado esperado.
