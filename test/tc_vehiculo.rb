@@ -1,5 +1,5 @@
 require 'test/unit'
-require '../lib/vehiculo'
+require 'lib/vehiculo'
 
 class TestVehiculo < Test::Unit::TestCase
     
