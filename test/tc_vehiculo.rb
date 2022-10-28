@@ -13,4 +13,8 @@ class TestVehiculo < Test::Unit::TestCase
     def test_tcost
         assert_equal(10, tot_cost(2,5))
     end
+
+    def test_disc
+        assert_equal(100.0, discount_price(200.0,50.0))
+    end
 end
