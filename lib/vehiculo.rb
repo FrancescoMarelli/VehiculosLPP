@@ -9,3 +9,8 @@ def type(tipo)
         puts error;
     end
 end
+
+#función que detecta el coste total de alquiler de un vehiculo
+def tot_cost(days, price_pday)
+    result = days * price_pday
+end
