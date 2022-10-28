@@ -16,3 +16,5 @@ Prueba unitaria de función de alquiler con descuento, resultado esperado.
 Realización función que calcula km totales realizados por el cliente durante el periodo del alquiler del vehiculo con dos parametros: los kilometros que tiene el vehiculo en el momento de la entrega al cliente y los km del vehiculo en el momento de la devolución
 
 La prueba ha dado exito positivo. Los valores son los esperados.
+
+En fin se ha realizado un rakefile para testear el codigo mas sencillamente.
