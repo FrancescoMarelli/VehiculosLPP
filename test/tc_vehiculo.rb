@@ -1,5 +1,5 @@
 require 'test/unit'
-require 'lib/vehiculo'
+require '../lib/vehiculo'
 
 class TestVehiculo < Test::Unit::TestCase
     
@@ -12,6 +12,7 @@ class TestVehiculo < Test::Unit::TestCase
 
     def test_tcost
         assert_equal(10, tot_cost(2,5))
+        assert_equal(10.0, tot_cost(2.0,5.0))
     end
 
     def test_disc
