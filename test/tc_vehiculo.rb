@@ -9,4 +9,8 @@ class TestVehiculo < Test::Unit::TestCase
         assert_equal("turismo", type(2))
         assert_equal(@error, type(3))
     end
+
+    def test_tcost
+        assert_equal(10, tot_cost(2,5))
+    end
 end
