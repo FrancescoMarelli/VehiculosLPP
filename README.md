@@ -12,3 +12,5 @@ Prueba unitaria de la función de coste total, resultado esperado.
 Realización función que calcula el precio total de alquiler con un descuento dado que se pasa por parametro.
 
 Prueba unitaria de función de alquiler con descuento, resultado esperado.
+
+Realización función que calcula km totales realizados por el cliente durante el periodo del alquiler del vehiculo con dos parametros: los kilometros que tiene el vehiculo en el momento de la entrega al cliente y los km del vehiculo en el momento de la devolución
