@@ -1,8 +1,8 @@
-task :default => :tu
+task :default => :ut
 
 desc "Pruebas unitarias de vehiculo"
 
-task :tu do 
+task :ut do 
     sh "ruby -I. test/tc_vehiculo.rb"
 end
 
