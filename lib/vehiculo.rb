@@ -21,3 +21,8 @@ def discount_price(tot_cost, percent)
     discount = tot_cost * percent
     p result = tot_cost - discount
 end
+
+#función que evalua los kilometros totales recorridos por un vehiculo
+def done_km(start_km, deliv_km)
+    result = deliv_km - start_km
+end
