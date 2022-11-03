@@ -32,8 +32,7 @@ describe Vehiculo do
             expect(@v.year).not_to eq(1990)
 
             expect(@v.price).to eq(2500)    # price
-            expect(@v.price).not_to eq(2000)    # price
-
+            expect(@v.price).not_to eq(2000)    
 
         end
 
