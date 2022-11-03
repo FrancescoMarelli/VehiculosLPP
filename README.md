@@ -2,5 +2,6 @@ FRANCESCO MARELLI
 Practica n 6: TDD
 
 -Creación rspec
--Creación fichero pruebas tdd
+-Expectativa que existe Vehiculo #fallo
 -Creación clase vacía
+-Expectativa que existe Vehiculo #funciona
