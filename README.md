@@ -5,3 +5,6 @@ Practica n 6: TDD
 -Expectativa que existe Vehiculo #fallo
 -Creación clase vacía
 -Expectativa que existe Vehiculo #funciona
+-Expectativa initialize #fallo
+-Desarrollo initialize
+-Expectativa de metodo initialize #funciona
