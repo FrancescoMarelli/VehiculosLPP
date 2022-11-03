@@ -1,5 +1,4 @@
 class Vehiculo
-    
 
 
 end
