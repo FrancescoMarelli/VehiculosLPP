@@ -1,5 +1,6 @@
 class Vehiculo
     attr_reader :id, :fab, :year, :mpg, :price, :owner, :phone
+    
     def initialize(id, fab, year, mpg, price, hash)
         @id = id
         @fab = fab
@@ -12,7 +13,7 @@ class Vehiculo
             puts " El año de fabricación tiene que ser comprendido entre 1900 y 2022"
             else
                  @year = year
-        end
+        end 
         
     end
 
