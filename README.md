@@ -1,5 +1,5 @@
 FRANCESCO MARELLI
-Practica n 6: TDD
+Practica n 6: Desarrollo Dirigido por Pruebas (Test Driven Development - TDD)
 
 -Creación rspec
 -Expectativa que existe Vehiculo #fallo
