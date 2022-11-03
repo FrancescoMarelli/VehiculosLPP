@@ -8,3 +8,6 @@ Practica n 6: TDD
 -Expectativa initialize #fallo
 -Desarrollo initialize
 -Expectativa de metodo initialize #funciona
+-Expectativas de los getters #fallo
+-Implementación codigo Getters 
+-Expectativa de getters #funciona
