@@ -63,4 +63,4 @@ end
 x = Hash[owner: "Francesco", phone: "a"]
 v = Vehiculo.new(1,"Mercedes", 2000, 50.0, 2500, x)
 
-p v.distance(100, "americano")
+
