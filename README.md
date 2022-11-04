@@ -11,3 +11,7 @@ Practica n 6: Desarrollo Dirigido por Pruebas (Test Driven Development - TDD)
 -Expectativas de los getters #fallo
 -Implementación codigo Getters: através de attr_reader, podemos crear los métodos getter que permitirán acceder a los atributos facilmente desde "fuera"
 -Expectativas de getters #funciona
+-Expectativa función distancia #FALLO
+-Implementación función distancia: Calcula la distancia con la cantidad de combustible dada.
+-Expectativa función distancia #FUNCIONA
+-Rakefile
