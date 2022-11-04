@@ -55,11 +55,11 @@ describe Vehiculo do
 
         context "Función distance" do
             it "Prueba millas per gallon" do
-                expect(@v.distance(100, "americano")).to eq(5000)
+                expect(@v.distance(100, "americano")).to eq(2125.72)
                 expect(@v.distance(100, "americano")).not_to eq(50)
                 
     
-                expect(@v.distance(100, "imperial")).to eq(5000)
+                expect(@v.distance(100, "imperial")).to eq(1770.03)
                 expect(@v.distance(100, "imperial")).not_to eq(56)
 
                 expect(@v.distance(100, "a")).to eq(nil)
