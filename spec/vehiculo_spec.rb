@@ -16,11 +16,13 @@ describe Vehiculo do
 
         it "Pruebas costructor" do
              expect(Vehiculo.new(1, "Mercedes", 2000, 50.0, 2349, @x)).not_to eq(nil);
+             expect(Vehiculo.new("Mercedes", 1, 2000, 50.0, 2349, @x)).not_to eq(@v);
+             expect((Vehiculo.new(1, "Mercedes", 2000, 50.0, 2349, @x)).class).to eq(Vehiculo)
         end
 
         context "Pruebas de getters, atributos y to_s" do
 
-                it "Prubeas atribuo id" do
+                it "Pruebas atributo id" do
                     expect(@v.id).to eq(1)  #id
                     expect(@v.id).not_to eq(2)
                     expect(Vehiculo.new(2, "Lamborghini", 2020, 40, 40000, @x).id).to eq(2)
@@ -54,6 +56,14 @@ describe Vehiculo do
         context "Función distance" do
             it "Prueba millas per gallon" do
                 expect(@v.distance(100, "americano")).to eq(5000)
+                expect(@v.distance(100, "americano")).not_to eq(50)
+                
+    
+                expect(@v.distance(100, "imperial")).to eq(5000)
+                expect(@v.distance(100, "imperial")).not_to eq(56)
+
+                expect(@v.distance(100, "a")).to eq(nil)
+                expect(@v.distance("americano", 100)).to eq(nil)
             end
 
         end

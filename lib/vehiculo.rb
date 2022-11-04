@@ -9,29 +9,29 @@ class Vehiculo
         # Control numero identificación vehiculo
         if(id.is_a?Integer) then
             @id = id
-        else puts "El numero de identificación tiene que ser un entero"
+        else puts "ERROR: El numero de identificación tiene que ser un entero"
         end
 
         if(fab.is_a?String) then
             @fab = fab
-        else puts "El nombre del fabricante tiene que ser una cadena de caracteres"
+        else puts "ERROR: El nombre del fabricante tiene que ser una cadena de caracteres"
         end
 
         if(mpg.is_a?Numeric) then
             @mpg = mpg
-        else puts "Las millas por galón son representadas por numeros, suele ser flotante"
+        else puts "ERROR: Las millas por galón son representadas por numeros, suele ser flotante"
         end
 
         if(price.is_a?Numeric) then 
             if(price > 0 ) then 
                 @price = price
-            else puts "El precio del vehiculo no puede ser una cifra negativa"
+            else puts "ERROR: El precio del vehiculo no puede ser una cifra negativa"
             end
-        else puts "El precio del vehiculo tiene que tener valor numerico, no de otro tipo"
+        else puts "ERROR: El precio del vehiculo tiene que tener valor numerico, no de otro tipo"
         end
 
         if (year < 1900 || year > 2022) then 
-            puts " El año de fabricación tiene que ser comprendido entre 1900 y 2022"
+            puts "ERROR: El año de fabricación tiene que ser comprendido entre 1900 y 2022"
             else
                  @year = year
         end 
@@ -39,19 +39,19 @@ class Vehiculo
     end
 
     def to_s
-        "(#{@id}, #{@fab}, #{@mpg}, #{@price}, #{@hash}, #{@hash})"
+        "(#{@id}, #{@fab}, #{@mpg}, #{@price}, #{@hash})"
     end
 
     def distance(gas_q, type) 
         if type == "americano" then 
             litros = 4.54609 * gas_q
-            p distance = @mpg * gas_q
+            return distance = @mpg * gas_q
             
         elsif type == "imperial" then 
             litros = 3.785 * gas_q
-            p distance = @mpg * gas_q
+            return distance = @mpg * gas_q
 
-        else puts "El tipo de medída puede ser imperial o americano"
+        else puts "ERROR: El tipo de medída puede ser imperial o americano"
         end
 
        
