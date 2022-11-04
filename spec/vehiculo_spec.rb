@@ -18,22 +18,37 @@ describe Vehiculo do
              expect(Vehiculo.new(1, "Mercedes", 2000, 234, 2349, @x)).not_to eq(nil);
         end
 
-        it "Pruebas acceso atributo" do
-            expect(@v.id).to eq(1)  #id
-            expect(@v.id).not_to eq(2)
+        context "Pruebas de getters, atributos y to_s" do
 
-            expect(@v.fab).to eq("Mercedes") #fabricante
-            expect(@v.fab).not_to eq("BMW")
+                it "Prubeas atribuo id" do
+                    expect(@v.id).to eq(1)  #id
+                    expect(@v.id).not_to eq(2)
+                    expect(Vehiculo.new(2, "Lamborghini", 2020, 40, 40000, @x).id).to eq(2)
+                end
 
-            expect(@v.mpg).to eq(125)       # mpg
-            expect(@v.mpg).not_to eq(100)
+                it "Pruebas atributo fabricante" do
+                    expect(@v.fab).to eq("Mercedes") #fabricante
+                    expect(@v.fab).not_to eq("BMW")
+                    expect(Vehiculo.new(2, "Lamborghini", 2020, 40, 40000, @x).fab).to eq("Lamborghini")
+                end
 
-            expect(@v.year).to eq(2000)     # year
-            expect(@v.year).not_to eq(1990)
+                it "Pruebas atributo miles per hour" do
+                    expect(@v.mpg).to eq(125)       # mpg
+                    expect(@v.mpg).not_to eq(100)
+                    expect(Vehiculo.new(2, "Lamborghini", 2020, 40, 40000, @x).mpg).to eq(40)
+                end
+                
+                it "Pruebas atributo año de fabricación" do
+                    expect(@v.year).to eq(2000)     # year
+                    expect(@v.year).not_to eq(1990)
+                    expect(Vehiculo.new(2, "Lamborghini", 2020, 40, 40000, @x).year).to eq(2020)
+                end
 
-            expect(@v.price).to eq(2500)    # price
-            expect(@v.price).not_to eq(2000)    
-
+                it "Pruebas atributo Precio" do
+                    expect(@v.price).to eq(2500)    # price
+                    expect(@v.price).not_to eq(2000)    
+                    expect(Vehiculo.new(2, "Lamborghini", 2020, 40, 40000, @x).price).to eq(40000)
+                end
         end
 
     end
