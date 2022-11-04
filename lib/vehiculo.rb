@@ -41,9 +41,13 @@ class Vehiculo
     def to_s
         "(#{@id}, #{@fab}, #{@mpg}, #{@price}, #{@hash}, #{@hash})"
     end
-end 
+
+    def distance(gas_q, type) 
+       
+    end 
+end
 
 x = Hash[owner: "Francesco", phone: "a"]
-v = Vehiculo.new(1,"Mercedes", 2000, 125, 2500, x)
-puts v.to_s
+v = Vehiculo.new(1,"Mercedes", 2000, 50.0, 2500, x)
+v.distance(100, "americano")
 

@@ -51,6 +51,14 @@ describe Vehiculo do
                 end
         end
 
+        context "Función distance" do
+            it "Prueba millas per gallon" do
+                expect(@v.distance(100, "americano")).to eq(5000)
+            end
+
+        end
+
+
     end
 
 end
