@@ -3,7 +3,7 @@ require 'vehiculo'
 describe Vehiculo do
     before :all do
         @x = Hash[owner: "Francesco", phone: 3450903]
-        @v = Vehiculo.new(1,"Mercedes", 2000, 125, 2500, @x)
+        @v = Vehiculo.new(1,"Mercedes", 2000, 50.0, 2500, @x)
     end
     
      #it "Clase vacia" do
@@ -15,7 +15,7 @@ describe Vehiculo do
     context "Pruebas clase Vehiculo" do
 
         it "Pruebas costructor" do
-             expect(Vehiculo.new(1, "Mercedes", 2000, 234, 2349, @x)).not_to eq(nil);
+             expect(Vehiculo.new(1, "Mercedes", 2000, 50.0, 2349, @x)).not_to eq(nil);
         end
 
         context "Pruebas de getters, atributos y to_s" do
@@ -33,7 +33,7 @@ describe Vehiculo do
                 end
 
                 it "Pruebas atributo miles per hour" do
-                    expect(@v.mpg).to eq(125)       # mpg
+                    expect(@v.mpg).to eq(50.0)       # mpg
                     expect(@v.mpg).not_to eq(100)
                     expect(Vehiculo.new(2, "Lamborghini", 2020, 40, 40000, @x).mpg).to eq(40)
                 end

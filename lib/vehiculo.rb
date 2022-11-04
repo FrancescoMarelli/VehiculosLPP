@@ -43,11 +43,22 @@ class Vehiculo
     end
 
     def distance(gas_q, type) 
+        if type == "americano" then 
+            litros = 4.54609 * gas_q
+            p distance = @mpg * gas_q
+            
+        elsif type == "imperial" then 
+            litros = 3.785 * gas_q
+            p distance = @mpg * gas_q
+
+        else puts "El tipo de medída puede ser imperial o americano"
+        end
+
        
     end 
 end
 
 x = Hash[owner: "Francesco", phone: "a"]
 v = Vehiculo.new(1,"Mercedes", 2000, 50.0, 2500, x)
-v.distance(100, "americano")
+
 
